@@ -40,7 +40,7 @@ function readJSON(file) {
         return request.responseText;
 };
 function load() {
-var temp = readJSON('abc.json');
+var temp = readJSON('https://github.com/HariMahi/Trial/blob/main/abc.json');
 var div = document.getElementById('product_name');
 div.innerHTML = div.innerHTML + temp[0].name + "<br>";
 }
