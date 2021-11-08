@@ -39,14 +39,15 @@ function readJSON(file) {
     request.send(null);
         return request.responseText;
 };
-
+function load() {
 var temp = readJSON('abc.json');
 var div = document.getElementById('product_name');
 div.innerHTML = div.innerHTML + temp[0].name + "<br>";
+}
 
         </script>
     </head>
-    <body>
+    <body onload="load()">
         <div class="card">
             <h1>Shopping Page</h1>
   <img id="product_image" style="width:50%">
