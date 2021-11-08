@@ -38,13 +38,13 @@
                 var mydata = JSON.parse(data);
 
                 var div = document.getElementById('product_name');
-                    div.innerHTML = div.innerHTML + mydata[0].name + "<br>";
+                    div.innerHTML = div.innerHTML + "Product Name: " + mydata[0].name + "<br>" + "<br>";
                 var div = document.getElementById('product_price');
-                    div.innerHTML = div.innerHTML + mydata[0].price + "<br>";
+                    div.innerHTML = div.innerHTML + "Price: " + mydata[0].price + "<br>" + "<br>";
                 var div = document.getElementById('product_desc');
-                    div.innerHTML = div.innerHTML + mydata[0].desc + "<br>";
+                    div.innerHTML = div.innerHTML + "About the product: " + mydata[0].desc + "<br>" + "<br>";
                 var div = document.getElementById('product_rating');
-                    div.innerHTML = div.innerHTML + mydata[0].rating + "<br>";
+                    div.innerHTML = div.innerHTML + "Product Rating: " + mydata[0].rating + "<br>" + "<br>";
  
             }
         </script>
