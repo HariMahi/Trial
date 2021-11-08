@@ -32,10 +32,16 @@
   opacity: 0.7;
 }
 </style>
-        <script type="text/javascript" src="abc.json"></script>
         <script type="text/javascript" >
             function load() {
-                var mydata = JSON.parse(data);
+                const fs = require('fs');
+
+fs.readFile('abc.json', 'utf8', (err, data) => {
+  if (err) console.error(err);
+  const jokes = JSON.parse(data);
+
+  console.log(jokes[0].value);
+});
                 var div = document.getElementById('product_image');
                     div.innerHTML = div.innerHTML + mydata[0].image + "<br>" + "<br>";
 
