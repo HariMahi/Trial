@@ -37,8 +37,9 @@ function readJSON(file) {
     var request = new XMLHttpRequest();
     request.open('GET', file, false);
     request.send(null);
-        if (request.readyState === 4 && request.status == 200)
-        return request.responseText;
+    var jsonData = JSON.parse(request.responseText);
+        /*if (request.readyState === 4 && request.status == 200)
+        return request.responseText;*/
 };
 function load() {
 var temp = readJSON('abc.json');
