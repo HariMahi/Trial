@@ -33,31 +33,30 @@
 }
 </style>
         <script type="text/javascript" >
-            function load() {
                 const fs = require('fs');
 
 fs.readFile('abc.json', 'utf8', (err, data) => {
   if (err) console.error(err);
   const jokes = JSON.parse(data);
 
-  console.log(jokes[0].value);
-});
+
+
                 var div = document.getElementById('product_image');
-                    div.innerHTML = div.innerHTML + mydata[0].image + "<br>" + "<br>";
+                    div.innerHTML = div.innerHTML + jokes[0].image + "<br>" + "<br>";
 
                 var div = document.getElementById('product_name');
-                    div.innerHTML = div.innerHTML + "Product Name: " + mydata[0].name + "<br>" + "<br>";
+                    div.innerHTML = div.innerHTML + "Product Name: " + jokes[0].name + "<br>" + "<br>";
                 
                 var div = document.getElementById('product_price');
-                    div.innerHTML = div.innerHTML + "Price: " + mydata[0].price + "<br>" + "<br>";
+                    div.innerHTML = div.innerHTML + "Price: " + jokes[0].price + "<br>" + "<br>";
                 
                 var div = document.getElementById('product_desc');
-                    div.innerHTML = div.innerHTML + "About the product: " + mydata[0].desc + "<br>" + "<br>";
+                    div.innerHTML = div.innerHTML + "About the product: " + jokes[0].desc + "<br>" + "<br>";
                 
                 var div = document.getElementById('product_rating');
-                    div.innerHTML = div.innerHTML + "Product Rating: " + mydata[0].rating + "<br>" + "<br>";
+                    div.innerHTML = div.innerHTML + "Product Rating: " + jokes[0].rating + "<br>" + "<br>";
  
-            }
+            });
         </script>
     </head>
     <body onload="load()">
