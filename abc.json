@@ -1,1 +1,1 @@
-data = '[{"name" : "Egg", "image" : "Eggs.jpg" , "price" : "Rs.5", "desc" : "Egg is good for health", "rating" : "4/5"},{"name" : "Javed"}]';
+data = '[{"name" : "Egg", "image" : "https://github.com/HariMahi/Trial/blob/main/Eggs.jpg?raw=true" , "price" : "Rs.5", "desc" : "Egg is good for health", "rating" : "4/5"},{"name" : "Javed"}]';
