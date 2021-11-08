@@ -40,9 +40,15 @@ function readJSON(file) {
         return request.responseText;
 };
 function load() {
-var temp = readJSON('https://github.com/HariMahi/Trial/blob/main/abc.json');
+var temp = readJSON('abc.json');
 var div = document.getElementById('product_name');
 div.innerHTML = div.innerHTML + temp[0].name + "<br>";
+var div = document.getElementById('product_price');
+div.innerHTML = div.innerHTML + temp[0].price + "<br>";
+var div = document.getElementById('product_desc');
+div.innerHTML = div.innerHTML + temp[0].desc + "<br>";
+var div = document.getElementById('product_rating');
+div.innerHTML = div.innerHTML + temp[0].rating + "<br>";
 }
 
         </script>
