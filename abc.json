@@ -1,1 +1,1 @@
-data = '[{"name" : "Riyaz"},{"name" : "Javed"},{"name" : "Arun"},{"name" : "Sunil"},{"name" : "Rahul"},{"name" : "Anita"}]';
+data = '[{"name" : "Egg", "price" : "Rs.5", "desc" : "Egg is good for health", "rating" : "4/5"},{"name" : "Javed"}]';
