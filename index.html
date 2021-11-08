@@ -41,7 +41,7 @@ function readJSON(file) {
         return request.responseText;
 };
 function load() {
-var temp = readJSON(abc.json);
+var temp = readJSON('abc.json');
 var div = document.getElementById('product_image');
 div.innerHTML = div.innerHTML + temp[0].image + "<br>";
 var div = document.getElementById('product_name');
