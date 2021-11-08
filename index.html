@@ -41,7 +41,9 @@ function readJSON(file) {
 };
 
 var temp = readJSON('abc.json');
-alert(temp);
+var div = document.getElementById('product_name');
+div.innerHTML = div.innerHTML + temp[0].name + "<br>";
+
         </script>
     </head>
     <body>
