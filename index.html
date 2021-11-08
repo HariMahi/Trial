@@ -41,6 +41,8 @@ function readJSON(file) {
 };
 function load() {
 var temp = readJSON('abc.json');
+var div = document.getElementById('product_image');
+div.innerHTML = div.innerHTML + temp[0].image + "<br>";
 var div = document.getElementById('product_name');
 div.innerHTML = div.innerHTML + temp[0].name + "<br>";
 var div = document.getElementById('product_price');
