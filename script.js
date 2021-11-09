@@ -4,7 +4,7 @@ function readJSON(file) {
     request.send(null);
         if (request.readyState === 4 && request.status == 200)
         return request.responseText;
-};
+}
 function load() {
    var res = readJSON('abc.json');
    var pi = document.getElementById('product_image');
@@ -17,5 +17,4 @@ function load() {
    pd.innerHTML = pd.innerHTML + res[0].desc + "<br>";
    var pr = document.getElementById('product_rating');
    pr.innerHTML = pr.innerHTML + res[0].rating + "<br>";
-};
-
+}
