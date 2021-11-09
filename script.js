@@ -1,7 +1,7 @@
 function readJSON(file) {
     var request = new XMLHttpRequest();
     request.open('GET', file, true);
-    /*request.send(null);*/
+    request.send(null);
         if (request.readyState === 4 && request.status == 200)
         return request.responseText;
 }
