@@ -7,8 +7,12 @@ function readJSON(file) {
 }
 function load() {
    let res = readJSON('prod.json');
+    res = JSON.parse(res);
+    console.log(res[0]);
    let pi = document.getElementById('product_image');
-   pi.innerHTML = pi.innerHTML + res[0].image + "<br>";
+   let atr = document.createAttribute("src");
+    atr.value = res[0].image;
+    pi.setAttributeNode(atr);
    let pn = document.getElementById('product_name');
    pn.innerHTML = pn.innerHTML + res[0].name + "<br>";
    let pp = document.getElementById('product_price');
