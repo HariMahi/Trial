@@ -21,3 +21,6 @@ function load() {
    let pr = document.getElementById('product_rating');
    pr.innerHTML = pr.innerHTML + res[0].rating + "<br>";
 }
+function shopAlert() {
+  alert("Thank you for shopping with us! Kindly check your mail for further updates.");
+}
