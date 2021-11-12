@@ -4,10 +4,4 @@
   "price" : "Rs 237.50 (Inclusive of all taxes)", 
   "desc" : "Our infertile free range eggs are produced using traditional farming methods, ensuring highest animal protection standards. Our hens are pasture raised and humanely treated. These eggs do not contain antibiotics, growth promoters, hormones or any such substances. Our eggs are rich in omega 3, protein & vitamins. Our hens enjoy a lot of free space, a lot of greens to feed on, space place to rest, areas for playing a lot of fresh air, 100% natural free range eggs." , 
   "rating" : "4/5"
-},{
-  "name" : "Vegetable",
-  "image" : "Veg.jpg", 
-  "price" : "20", 
-  "desc" : "Fresh vegetables from nearby farms" , 
-  "rating" : "5/5"
 }]
