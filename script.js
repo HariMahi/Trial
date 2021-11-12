@@ -8,7 +8,6 @@ function readJSON(file) {
 function load() {
    let res = readJSON('prod.json');
     res = JSON.parse(res);
-    console.log(res[0]);
    let pi = document.getElementById('product_image');
    let atr = document.createAttribute("src");
     atr.value = res[0].image;
