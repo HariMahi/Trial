@@ -10,14 +10,14 @@ function load() {
     res = JSON.parse(res);
    let pi = document.getElementById('product_image');
    let atr = document.createAttribute("src");
-    atr.value = res.image;
+    atr.value = res[0].image;
     pi.setAttributeNode(atr);
    let pn = document.getElementById('product_name');
-   pn.innerHTML = pn.innerHTML + res.name + "<br>";
+   pn.innerHTML = pn.innerHTML + res[0].name + "<br>";
    let pp = document.getElementById('product_price');
-   pp.innerHTML = pp.innerHTML + res.price + "<br>";
+   pp.innerHTML = pp.innerHTML + res[0].price + "<br>";
    let pd = document.getElementById('product_desc');
-   pd.innerHTML = pd.innerHTML + res.desc + "<br>";
+   pd.innerHTML = pd.innerHTML + res[0].desc + "<br>";
    let pr = document.getElementById('product_rating');
-   pr.innerHTML = pr.innerHTML + res.rating + "<br>";
+   pr.innerHTML = pr.innerHTML + res[0].rating + "<br>";
 }
