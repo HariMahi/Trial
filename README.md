@@ -1,1 +1,1 @@
-Just a trial branch to test .
+A basic shopping page using using static JSON.
