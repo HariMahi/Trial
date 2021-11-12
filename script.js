@@ -20,10 +20,6 @@ function load() {
    pd.innerHTML = pd.innerHTML + res[0].desc + "<br>";
    let pr = document.getElementById('product_rating');
    pr.innerHTML = pr.innerHTML + res[0].rating + "<br>";
-}
-   function load1() {
-   let res = readJSON('prod.json');
-    res = JSON.parse(res);
        
    let pi1 = document.getElementById('product_image');
    let atr1 = document.createAttribute("src");
