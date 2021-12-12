@@ -6,7 +6,7 @@ function readJSON(file) {
         return request.responseText;
 }
 function load() {
-   let res = readJSON('prod.json');
+   let res = readJSON('db.json');
     res = JSON.parse(res);
    let pi = document.getElementById('product_image');
    let atr = document.createAttribute("src");
